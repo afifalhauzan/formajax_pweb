@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Chat App</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-center items-center bg-gray-50">
+    <section class="flex flex-col justify-center items-center mt-10 p-5 bg-gray-100">
+        <header>
+            <h1 class="text-2xl text-center text-blue-500 mt-6 mb-4">AJAX Chat App</h1>
+            <p class="text-md text-center text-blue-800 my-1"> Dibawah ini adalah kotak pesan dari file .txt. </p>
+            <p class="text-md text-center text-blue-800 mt-1 mb-3"> Masukkan pesan dibawah maka akan muncul di kotak ini</p>
+        </header>
+
+        <textarea id="chat" rows="20" cols="31" class="bg-gray-50 border border-gray-300 mb-4 p-2"></textarea><br>
+        
+        <label>
+            Pesan: <input type="text" id="message" class="bg-gray-50 border border-gray-300 mb-2 p-2">
+        </label>
+
+        <a id="error-message" class="text-red-700 my-2 hidden">Teks anda kosong</a>
+
+        <button id="send-button" type="submit" class="bg-blue-600 text-white py-2 px-2 rounded hover:bg-blue-800">Kirim</button>
+    </section>
+    
+    <script src="chat.js"></script>
+
+</body>
+</html>
